@@ -38,3 +38,20 @@ validatePhoneNumber("12345"); // invalid, terlalu pendek
 
 output yang diharapkan : 
 jika valid, kembalikan "Nomor hp valid"
+jika tidak valid, kembalikan "Nomor hp tidak valid"
+
+// validasi email
+buatlah fungsi validateEmail yang memeriksa apakah email memiliki struktur yang benar, di mana:
+ - harus mengandung karakter '@'
+ - tidak boleh kosong
+ - panjang minimal 5 karakter
+
+contoh input:
+validateEmail("user@example.com"); // valid
+validateEmail("user@com"); // valid
+validateEmail("user"); // invalid, tidak ada '@'
+validateEmail(""); // invalid, kosong
+
+output yang diharapkan : 
+jika valid, kembalikan "Email Valid"
+jika tidak valid, kembalikan "Email tidak valid"
