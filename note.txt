@@ -55,3 +55,17 @@ validateEmail(""); // invalid, kosong
 output yang diharapkan : 
 jika valid, kembalikan "Email Valid"
 jika tidak valid, kembalikan "Email tidak valid"
+
+// validasi tanggal lahir
+buatlah fungsi validateTanggalLahir yang memeriksa apakah tanggal lahir yang diberikan valid, di mana: 
+ - tanggal lahir harus lebih kecil dari tanggal lahir ini
+ - format input berupa YYYY-MM-DD
+
+ contoh input:
+ validateTanggalLahir("2005-05-01"); // Valid
+ validateTanggalLahir("2025-05-01"); // invalid, masa depan
+ validateTanggalLahir("") // invalid, kosong
+
+ output yang diharapkan:
+ jika valid, kembalikan "Tanggal Lahir valid"
+ jika tidak valid, kembalikan "tanggal lahir tidak valid"

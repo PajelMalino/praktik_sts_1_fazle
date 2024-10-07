@@ -58,3 +58,23 @@ function validateEmail(email) {
 
   return "Email Valid";
 }
+
+function validateTanggalLahir(tanggal_lahir) {
+    if (tanggal_lahir === "") {
+        return "Tanggal Lahir tidak valid"
+    }
+
+    const tanggal_lahirObj = new Date(tanggal_lahir);
+
+    if (isNaN(tanggal_lahirObj.getTime())) {
+        return "Format Tanggal Lahir tidak Valid"
+    }
+
+    const now = new Date();
+
+    if (tanggal_lahirObj >= now) {
+        return "Tanggal Lahir tidak Valid (Tanggal di masa depan)"
+    }
+
+    return "Tanggal lahir valid"
+}
