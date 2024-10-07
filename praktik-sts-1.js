@@ -40,16 +40,21 @@ function validatePhoneNumber(nomortelepon) {
 
 function validateEmail(email) {
     if (email === "") {
-        return "Email tidak Valid"
+      return "Email tidak valid"
     }
 
-    if (email.length > 5) {
-        return "Email panjang tidak valid"
+    if (email.length < 5) {
+      return "Email terlalu pendek"
     }
-
-    if (email.test(email)) {
-        return "Email tidak boleh kosong"
+  
+    if (!email.includes("@")) {
+      return "Email tidak valid"
+    }
+  
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return "Format email tidak valid"
     }
 
     return "Email Valid"
-}
+  }
