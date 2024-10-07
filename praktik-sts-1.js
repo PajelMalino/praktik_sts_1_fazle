@@ -94,3 +94,10 @@ function validateAkses(role, status) {
         return "Akses ditolak"
     }
 }
+
+console.log(validateName);
+console.log(validateAddress);
+console.log(validatePhoneNumber);
+console.log(validateTanggalLahir);
+console.log(validateEmail);
+console.log(validateAkses);
