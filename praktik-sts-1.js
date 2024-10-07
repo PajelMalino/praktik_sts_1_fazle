@@ -1,3 +1,4 @@
+// validasi nama
 function validateName(name) {
   if (name === "") {
     return "Nama tidak valid";
@@ -10,6 +11,7 @@ function validateName(name) {
   return "Nama Valid";
 }
 
+// validasi alamat
 function validateAddress(alamat) {
   if (alamat === "") {
     return "Alamat tidak valid";
@@ -22,6 +24,7 @@ function validateAddress(alamat) {
   return "Alamat valid";
 }
 
+// validasi nomor telepom
 function validatePhoneNumber(nomortelepon) {
   if (nomortelepon === "") {
     return "Nomor telepon tidak Valid";
@@ -38,6 +41,7 @@ function validatePhoneNumber(nomortelepon) {
   return "Nomor telepon Validd";
 }
 
+// validasi email
 function validateEmail(email) {
   if (email === "") {
     return "Email tidak valid";
@@ -59,6 +63,7 @@ function validateEmail(email) {
   return "Email Valid";
 }
 
+// validasi tanggal lahir
 function validateTanggalLahir(tanggal_lahir) {
     if (tanggal_lahir === "") {
         return "Tanggal Lahir tidak valid"
@@ -79,6 +84,7 @@ function validateTanggalLahir(tanggal_lahir) {
     return "Tanggal lahir valid"
 }
 
+// validasi akses
 function validateAkses(role, status) {
     if (role === "admin") {
         return "Akses diizinkan"
