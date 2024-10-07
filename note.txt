@@ -1,0 +1,40 @@
+// validasi nama
+buatlah fungsi validateName yang menerima input berupa nama, di mana nama tersebut harus:
+ - tidak boleh kosong
+ - harus terdiri dari minimal 3 karakter
+
+contoh input : 
+validateName("Ali"); // Valid
+validateName(""); // invalid, nama kosong
+validateName("A"); // invalid, nama terlalu pendek
+
+output yang diharapkan : 
+jika valid, kembalikan "Nama Valid"
+jika tidak valid, kembalikan "nama tidak valid"
+
+// validasi alamat
+buatlah fungsi validateAddress yang menerima input berupa alamat, di mana alamat tersebut harus : 
+ - tidak boleh kosong
+ - panjangnya minimal 10 karakter
+
+contoh input : 
+validateAddress("Jl. Merdeka No.10"); // valid
+validateAddress(""); // invalid, alamat kosong
+validateAddress("Jl 5"); // invalid, alamat terlalu pendek
+
+jika valid, kembalikan "Alamat valid"
+jika tidak valid, kembalikan "Alamat tidak valid"
+
+// validasi nomor hp
+buatlah fungsi validatePhoneNumber yang menerima input berupa nomor hp, di mana nomor tersebut harus : 
+ - tidak boleh kosong
+ - panjangnya antara 10 hingga 13 karakter
+ - hanya boleh berisi angka
+
+contoh input : 
+validatePhoneNumber("08123456789"); // valid
+validatePhoneNumber("08123abc"); // invalid, terdapat huruf
+validatePhoneNumber("12345"); // invalid, terlalu pendek
+
+output yang diharapkan : 
+jika valid, kembalikan "Nomor hp valid"
