@@ -35,5 +35,5 @@ function validatePhoneNumber(nomortelepon) {
         return "Nomor telepon hanya boleh berisi angka"
     }
 
-    return "Nomor telepon Valid"
+    return "Nomor telepon Validd"
 }
