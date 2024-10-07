@@ -69,3 +69,23 @@ buatlah fungsi validateTanggalLahir yang memeriksa apakah tanggal lahir yang dib
  output yang diharapkan:
  jika valid, kembalikan "Tanggal Lahir valid"
  jika tidak valid, kembalikan "tanggal lahir tidak valid"
+
+// validasi akses
+buatlah fungsi validateAkses yang memeriksa apakah user memeiliki hak akses berdasarkan:
+
+ - Role: 'admin', 'user', atau 'guset'
+ - Status: 'active', atau 'inactive'
+
+aturan validasi:
+ - 'admin' dapat mengakses semua fitur
+ - 'user' hanya bisa mengakses jika statusnya 'active'
+ - 'guest' tidak bisa mengakses apapun
+
+contoh input:
+validateAkses('admin', 'active'); // valid, akses penuh
+validateAkses('user', 'inactive'); // invalid, status tidak aktif
+validateAkses('guest', 'active'); // invalid, guest tidak punya akses
+
+output yang diharapkan:
+jika valid, kembalikan "Akses diizinkan"
+jika tidak valid, kembalikan "Akses ditolak"

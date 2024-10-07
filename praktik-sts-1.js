@@ -78,3 +78,4 @@ function validateTanggalLahir(tanggal_lahir) {
 
     return "Tanggal lahir valid"
 }
+
