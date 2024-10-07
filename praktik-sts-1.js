@@ -38,3 +38,18 @@ function validatePhoneNumber(nomortelepon) {
     return "Nomor telepon Validd"
 }
 
+function validateEmail(email) {
+    if (email === "") {
+        return "Email tidak Valid"
+    }
+
+    if (email.length > 5) {
+        return "Email panjang tidak valid"
+    }
+
+    if (email.test(email)) {
+        return "Email tidak boleh kosong"
+    }
+
+    return "Email Valid"
+}
