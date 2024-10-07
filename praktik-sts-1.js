@@ -23,38 +23,38 @@ function validateAddress(alamat) {
 }
 
 function validatePhoneNumber(nomortelepon) {
-    if (nomortelepon === "") {
-        return "Nomor telepon tidak Valid"
-    }
+  if (nomortelepon === "") {
+    return "Nomor telepon tidak Valid";
+  }
 
-    if (nomortelepon.length < 10 || nomortelepon.length > 13) {
-        return "Panjang nomor telepon tidak valid"
-    }
+  if (nomortelepon.length < 10 || nomortelepon.length > 13) {
+    return "Panjang nomor telepon tidak valid";
+  }
 
-    if (nomortelepon.test(nomortelepon)) {
-        return "Nomor telepon hanya boleh berisi angka"
-    }
+  if (nomortelepon.test(nomortelepon)) {
+    return "Nomor telepon hanya boleh berisi angka";
+  }
 
-    return "Nomor telepon Validd"
+  return "Nomor telepon Validd";
 }
 
 function validateEmail(email) {
-    if (email === "") {
-      return "Email tidak valid"
-    }
-
-    if (email.length < 5) {
-      return "Email terlalu pendek"
-    }
-  
-    if (!email.includes("@")) {
-      return "Email tidak valid"
-    }
-  
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return "Format email tidak valid"
-    }
-
-    return "Email Valid"
+  if (email === "") {
+    return "Email tidak valid";
   }
+
+  if (email.length < 5) {
+    return "Email terlalu pendek";
+  }
+
+  if (!email.includes("@")) {
+    return "Email tidak valid";
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return "Format email tidak valid";
+  }
+
+  return "Email Valid";
+}
