@@ -79,3 +79,12 @@ function validateTanggalLahir(tanggal_lahir) {
     return "Tanggal lahir valid"
 }
 
+function validateAkses(role, status) {
+    if (role === "admin") {
+        return "Akses diizinkan"
+    } else if (role === 'user' && status === 'active') {
+        return "Akses diizinkan"
+    } else {
+        return "Akses ditolak"
+    }
+}
